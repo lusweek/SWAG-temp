@@ -1,0 +1,184 @@
+body{
+    margin: 0px;
+    background-color: rgb(180, 180, 180);
+}
+
+h2{
+    font-size: 18px;
+}
+
+/**/
+
+/*Side-menu start*/
+nav{
+    display: flex;
+    height: 70px;
+    background-color: transparent;
+    width: 100vw;   
+    position: fixed;
+    justify-content: flex-end;
+    z-index: 10;
+    top: 0px;
+
+}
+nav img{
+    margin:4px 0 0 5%;
+}
+
+
+.btn-open {
+    margin: 10px 20px 0px 0px;
+    font-size: 30px;
+    position: absolute;
+    z-index: 2;
+    color: rgb(255, 255, 0);
+    padding: 2px;
+    position: fixed;
+    transition-duration:0.5s ;
+  }
+ 
+  .navbar-side {
+    display: flex;
+    flex-direction: column;
+  
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    transition: 0.5s;
+    width: 0px;
+    height: 100vh;
+  }
+  .navbar-side img {
+    width: 220px;
+    padding: 15px;
+  }
+  
+  .navbar-side .btn-close {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 36px;
+    margin-right: 50px;
+  }
+  .btn-close{
+      font-size: 30px;
+  }
+  
+  .navbar-side a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*Side-menu end*/
+
+  /*Logo side*/
+  
+  .logo-side{
+      position: fixed;
+      height: 80px;
+      align-self: flex-start;
+      left: 0px;
+      margin-top: 0; ;
+      
+      transition-duration: 1s;
+  }
+
+/**/
+
+header{
+    display: block;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header h2{
+    
+}
+
+#SWAG-logo{
+    position: absolute;
+    height: 60px;
+    left: 10px;
+    z-index: 0;
+}
+
+.kommande-wrapper, .tidigare-wrapper{
+    width: 100vw;
+    height: 120px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.kommande, .tidigare{
+width: 80vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: rgb(37, 37, 37);
+color: white;
+text-align: center;
+margin-bottom: 5px;
+border-radius: 2px;
+
+-webkit-box-shadow: 0px 2px 12px 4px rgba(0,0,0,0.83); 
+box-shadow: 0px 2px 12px 4px rgba(0,0,0,0.83);
+
+}
+
+.SM-street-workout-wrapper,
+.nortstan-takeover-wrapper,
+.king-of-swag-wrapper{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.SM-street-workout,
+.nortstan-takeover,
+.king-of-swag {
+    width: 72vw;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 10px 10px 23px 10px;
+    border-radius: 2px;
+
+    -webkit-box-shadow: 0px 2px 12px 4px rgba(0,0,0,0.83); 
+box-shadow: 0px 2px 12px 4px rgba(0,0,0,0.83);
+}
+
+.big-title{
+
+}
+.small-title{
+
+}
+
+
+.article-img{
+    height: 100px;
+    object-fit: cover;
+}
+
+
+.yellow-btn{
+    text-decoration: none;
+    background-color: rgb(255, 255, 0);
+    border-radius: 20px;
+    padding: 4px 53px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+}
