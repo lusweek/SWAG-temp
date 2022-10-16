@@ -19,11 +19,11 @@
         <div id="navbar-side-id" class="navbar-side">
             <a href="#/" class="btn-close" onclick="closeSideMenu()"> &times;</a>
                 <img class="logo" src="../img/swag_logo_vector_02.svg"></img>
-                <a onclick="closeSideMenuEvunumang()" id="a-evenumang"  href="#evenumang"><h2>Evenemang</h2></a>
                 <a onclick="closeSideMenuKurser()" href="#kurser"><h2>Kurser</h2></a>
-                <a onclick="closeSideMenuOpenGym()"   href="#open-gym"><h2>Open gym</h2></a> 
-                <a onclick="closeSideMenuSWAG()"   href="#vårt-utbud"><h2>Om SWAG</h2></a>
-                <a onclick="closeSideMenuSWAG()"   href="#kontakt"><h2>Anmälan/ Kontakt/<br>medlemsansökan</h2></a>
+            <a onclick="closeSideMenuSWAG()"   href="./pages/evenumang.html"><h2>Evenumang</h2></a>
+            <a onclick="closeSideMenuOpenGym()"   href="#open-gym"><h2>Open gym</h2></a> 
+            <a onclick="closeSideMenuSWAG()"   href="#vårt-utbud"><h2>Om SWAG</h2></a>
+            <a onclick="closeSideMenuSWAG()"   href="#kontakt"><h2>Anmälan/ Kontakt/<br>medlemsansökan</h2></a>
 
         </div>
         <a id="btn-open" class="btn-open" href="#/" onclick="openSideMenu()">
@@ -52,12 +52,18 @@
 
     <!-- SM - STREET WORKOUT -->
     <section class="SM-street-workout-wrapper">
-        <div class="SM-street-workout">
-            <h1 class="big-title">SM - Street workout</h1>
-            <h2 class="small-title">Detta året arrangerar SWAG SM i Street Workout</h2>
-            <img class="article-img" src="../img/DSC05101_Original.jpg" alt="bild SM">
-            <p>SM har tidigare hållits i Stockholm</p>
-            <a class="yellow-btn" href="">Se mer</a>
+        <div class="SM-street-workout article-content">
+            <div class="img-div">
+                <img class="article-img" src="../img/DSC05101_Original.jpg" alt="bild SM">
+            </div>
+            <div class="content">
+                <h1 class="big-title">SM - Street workout</h1>
+                <h2 class="small-title">Detta året arrangerar SWAG SM i Street Workout</h2>
+               
+                <p>SM har tidigare hållits i Stockholm</p>
+                <a onclick="openSM()" class="yellow-btn">Se mer</a>
+            </div>
+           
         </div>
     </section>
 
@@ -71,28 +77,68 @@
 
     <!-- NORDSTAN TAKEOVER -->
     <section class="nortstan-takeover-wrapper">
-        <div class="nortstan-takeover">
-            <h1 class="big-title">Nordstan takeover</h1>
-            <h2 class="small-title">Detta året fick SWAG möjligheten att visa upp <br> 
-                oss i Nordstan och låta allmänheten prova på</h2>
-            <img class="article-img" src="../img/biffarna_Original.jpg" alt="Nordstan takeover bild">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum hic cupiditate autem? Dicta, voluptas. Repudiandae sequi officia ad nulla nesciunt dolore! Provident autem delectus aut vel illo suscipit dolorum eum?</p>
-            <a class="yellow-btn" href="">Se mer</a>
+        <div class="nortstan-takeover article-content">
+            <div class="img-div">
+                <img class="article-img" src="../img/biffarna_Original.jpg" alt="Nordstan takeover bild">
+            </div>
+            <div class="content">
+                <h1 class="big-title">Nordstan takeover</h1>
+                <h2 class="small-title">Detta året fick SWAG möjligheten att visa upp <br> 
+                    oss i Nordstan och låta allmänheten prova på</h2>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum hic cupiditate autem? Dicta, voluptas. Repudiandae sequi officia ad nulla nesciunt dolore! Provident autem delectus aut vel illo suscipit dolorum eum?</p>
+                <a onclick="openNT()" class="yellow-btn">Se mer</a>
+            </div>
+            
         </div>
     </section>
 
     <!-- KING OF SWAG -->
     <section class="king-of-swag-wrapper">
-        <div class="king-of-swag">
-            <h1 class="big-title">King Of SWAG</h1>
-            <h2 class="small-title">DKing Of SWAG var den första tävlingen SWAG annordnade</h2>
-            <img class="article-img" src="../img/biffarna_Original.jpg" alt="bild SM">
-            <p>SM har tidigare hållits i Stockholm</p>
-            <a class="yellow-btn" href="">Se mer</a>
+        <div class="king-of-swag article-content">
+            <div class="img-div">
+                <img class="article-img" src="../img/biffarna_Original.jpg" alt="bild SM">
+            </div>
+            <div class="content">
+                <h1 class="big-title">King Of SWAG</h1>
+                <h2 class="small-title">DKing Of SWAG var den första tävlingen SWAG annordnade</h2>
+                <p>SM har tidigare hållits i Stockholm</p>
+                <a onclick="openKS()" class="yellow-btn">Se mer</a>
+            </div>
+            
         </div>
     </section>
 
+    <!-- ------------------------ MODAL START ------------------------ -->
+
+    <section class="modal-section">
+        <div class="modal-box">
+            <i onclick="closeModal()" class="fa fa-times icon" aria-hidden="true"></i>
+            <div class="modal-img-div">
+                <img id="modal-img" src="../img/Backround-img.jpg">
+            </div>
+            <div class="modal-content">
+                <h1 id="modal-title">En tidel!</h1> 
+                <p id="modal-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit asperiores et neque earum tempora ullam rerum, illum eveniet sint ipsam voluptas possimus dolore harum, commodi aperiam maiores recusandae impedit perferendis?</p>
+            </div>
+            <div class="modal-list-div">
+                <ul class="ul">
+                    <li id="li-plats"></li>
+                    <li id="li-tid"></li>
+                    <li id="li-pris"></li>
+                </ul>
+            </div>
+
+            <div class="modal-footer">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------ MODAL END ------------------------ -->
+
 
     <script src="../script/header.js"></script>
+    <script src="../script/evenumang.js"></script>
 </body>
 </html>

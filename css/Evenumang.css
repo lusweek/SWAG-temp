@@ -5,6 +5,14 @@ body{
 
 h2{
     font-size: 18px;
+    font-family: initial;
+    font-weight: bold;
+
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 /**/
@@ -99,6 +107,7 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 20px;
 }
 header h2{
     
@@ -181,4 +190,85 @@ box-shadow: 0px 2px 12px 4px rgba(0,0,0,0.83);
     font-size: 22px;
     font-weight: bold;
     color: rgb(37, 37, 37);
+}
+
+@media screen and (min-width: 800px){
+    .article-content{
+        display: flex;
+        justify-content: space-around;
+    }
+    .img-div{
+        display: flex;
+        align-items: center;
+    }
+    .content{
+        max-width: 50%;
+    }
+}
+
+
+/* -------------------- MODAL START ------------------- */
+
+.icon{
+    position: absolute;
+    top: 10px;
+    right: 13px;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+}
+
+.modal-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}  
+
+.modal-box{
+    height: 85%;
+    width: 85%;
+    padding: 2.5%;
+    background-color: #dedede;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.ul{
+    text-align: start;
+}
+
+.ul li {
+    margin: 5px 0;
+}
+
+.modal-img-div{
+    width: 100%;
+}
+
+.modal-img-div img{
+    width: 70%;
+}
+
+.modal-list-div{
+    align-self: start;
+    
+}
+
+.modal-footer{
+    position: absolute;
+    bottom: 30px;
+}
+
+#button{
+    font-size: 22px;
+    padding: 10px 15px;
 }

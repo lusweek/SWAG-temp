@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 html{
     scroll-behavior: smooth;
 }
@@ -29,6 +31,11 @@ h1, h2{
     font-style: italic;
 }
 
+.j-s-c{
+    align-self: center;
+}
+
+/* GLOBAL END */
 
 /*Side-menu start*/
 nav{
@@ -109,7 +116,7 @@ nav img{
 
 
 header{
-    background-image: url(../img/Backround-img.jpg);
+    background-image: url(./img/Backround-img.jpg);
     background-size: cover;
     background-position-x: 18%;
     background-position-y: center;
@@ -147,7 +154,7 @@ font: small-caps;
 #swag-slogan{
     word-spacing: 5vw;
     margin: 10px 10px 0 10px;
-    font-family: fantasy;
+    font-family: fantasy, serif;
 }
 
 /*Nav end*/
@@ -297,7 +304,7 @@ box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 22p
 }
 
 #gruppbild{
-margin:20px 10px 10px 10px;
+margin:20px 25px 10px 10px;
 border-radius: 5px;
 height: 50vw;
 float: left;
@@ -502,13 +509,13 @@ position: relative;
 }
 
 .om-swag-img{
-background-image: url(../img/biffarna_Original.jpg);
-background-size: cover;
-background-position-y: 14%;
-width: 94vw;
-margin:3%;
-border-radius: 5px;
-height: 140px;
+    background-image: url(./img/jakob-frontlever.jpg);
+    background-size: cover;
+    background-position-y: 12%;
+    width: 94vw;
+    margin: 3%;
+    border-radius: 5px;
+    height: 330px;
 }
 
 
@@ -579,7 +586,7 @@ position: relative;
 width: 40%;
 float: left;
 margin: 30px;
-margin: 23px 10px 10px 10px;
+margin: 23px 25px 10px 10px;
 border-radius: 5px;
 
 }
@@ -604,7 +611,7 @@ border-radius: 5px;
 .info-container-pt img{
     width: 40%;
     float: left;
-    margin: 10px 20px 10px 10px;
+    margin: 10px 25px 10px 10px;
 }
 
 
@@ -629,7 +636,8 @@ border-radius: 5px;
     border-radius: 5px;
 }
 .open-gym-info{
-    
+    line-height: 30px;
+    color: #ececec;
 }
 #open-gym-ul-p{
     margin-bottom: 0px;
@@ -727,11 +735,10 @@ border: 30px 2px 10px 2px solid white;
     border-top: solid rgb(255, 255, 255) 30px;
 }
 .kontakt{
-    width: 80%;
     margin: 0 10%;
     background-color: rgb(167, 166, 166);
     border-radius: 5px;
-    padding: 10px 0 0 0;
+    padding: 25px;
 }
 .kontakt-section form{
     font-size: 15px;
@@ -759,7 +766,7 @@ footer{
 }
 
 footer a{
-    transform: scale(2.5);
+    transform: scale(2.0);
     margin: 21px 15%;
 }
 footer i{
@@ -793,7 +800,7 @@ background-color: rgb(37, 37, 37);; /* to do Box shadow fade*/
     }
 .info-container p{
     background-color: rgb(155, 155, 155);   
-    padding: 10px;
+    padding: 25px;
     border-radius: 5px;
 }
 .info-container-mucle-up p{
@@ -801,14 +808,50 @@ border-top: rgb(173, 173, 173) solid 70px;
 }
 .info-container-kurser p{
     background-color: rgb(155, 155, 155);
-    padding: 10px;
+    padding: 25px;
     border-radius: 5px;
+}
+
+.txt-dec-none{
+    color: black;
+}
+
+.priser-table{
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;
+    margin: 40px 15px;
+    font-size: 18px;
+}
+
+.priser-table table,
+.priser-table td,
+.priser-table th{
+    color: black;
+    border: 1px solid gray;
+    line-height: 30px;
+    padding: 0px 15px;
+    line-height: 50px;
 
 }
 
+.mittle{
+    width: 100%;
+    text-align: center;
+}
+
+.qvote{
+    letter-spacing: 3px !important;
+    font-size: 14px !important;
+    color: #d2d2d2 !important;
+    text-align: center;
+    line-height: 24px;
+
+   
+}
 
 /*För dator*/
-@media screen and (min-width:800px){
+@media screen and (min-width:900px){
     /*
     .about-section article:hover, 
     .kurser-section article:hover{
@@ -839,7 +882,6 @@ border-top: rgb(173, 173, 173) solid 70px;
         margin: 10px 15% 10px 15%;
     }
  
-    .info-container-mucle-up p,
     .info-container-gruppbild p,
     .info-container-pt p{
         margin: 11% 12% 0 48%;
@@ -848,6 +890,15 @@ border-top: rgb(173, 173, 173) solid 70px;
         padding: 45px;
         border-radius: 5px;
         text-align: center;
+        }
+        .info-container-mucle-up p{
+        margin: 11% 12% 0 48%;
+        line-height: 1.7;
+        background-color: rgb(155, 155, 155);
+        padding: 45px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
         }
     .info-container p{
         line-height: 1.4;
@@ -881,17 +932,14 @@ border-top: rgb(173, 173, 173) solid 70px;
     }
 
     .om-swag-img{
-        height: 41vh;
+        height: 50vh;
+        width: 40%;
         margin: 0px;
         margin-top: 20px;
     }
 
-    p{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-
     .box-title{
-        font-size: 43px;
+        font-size: 35px;
         margin: 1px 136px;
     }
     #box-title-vad-är-sw{
