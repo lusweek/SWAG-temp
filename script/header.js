@@ -67,7 +67,7 @@ window.addEventListener("scroll", () => {
 })
 
 
-const openModal = (text) => {
+function openModal(text){
 
   document.querySelector('#modal-wrapper').style.display="flex"
 
@@ -82,4 +82,6 @@ const openModal = (text) => {
 
 }
 
-const closeModal = () => document.querySelector('#modal-wrapper').style.display="none"
+function closeModal(){
+  document.querySelector('#modal-wrapper').style.display="none"
+} 
