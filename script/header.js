@@ -65,3 +65,21 @@ window.addEventListener("scroll", () => {
     logo.style.height = "80px"
   }
 })
+
+
+const openModal = (text) => {
+
+  document.querySelector('#modal-wrapper').style.display="flex"
+
+  const modalImg = document.querySelector('#modal-img')
+
+  switch (text) {
+    case 'p-bars':
+      console.log('yessssss');
+      modalImg.src = "./img/P-bars.webp"
+    break;
+  }
+
+}
+
+const closeModal = () => document.querySelector('#modal-wrapper').style.display="none"

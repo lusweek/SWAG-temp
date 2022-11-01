@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Göteborgs första och enda streetworkout och calisthenicsförening. Vi brukar träna vid utegymmet i slottsskogen. Vi har kurser i muscle up och handstående.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/app.css">
     <script src="https://use.fontawesome.com/bf0334d3c9.js"></script>
@@ -18,6 +19,13 @@
  -> färgtonerna i alla bakgrunder, till sectionerna, till rgb 37 37 37 och nästan helt vit text-bakgrund. 
  -> Ändra logggan i vänsta hörnet och i menyn
 -->
+
+<div id="modal-wrapper">
+    <div class="modal-content">
+        <h1 id="close-modal-x" onclick="closeModal()">x</h1>
+        <img id="modal-img" src="" alt="image on the selected text">
+    </div>
+</div>
 
 
 <!--SIDE-BAR OCH LOGGA-->
@@ -119,20 +127,16 @@
         <div class="info-container">
                 <div class="om-swag-img"></div>
                     <p>Street Workout, calisthenics eller kroppsviktsträning. Tre
-                        namn med ungifär samma innebörd. Street Workout handlar framför allt om att
-                        använda kroppen som ditt träningsverktyg, de vanligaste övningarna är
-                        pull ups, armhävningar och squats, exempel på mer avancerade 
+                        namn med ungefär samma innebörd. Street Workout handlar framför allt om att
+                        använda kroppen som ditt träningsverktyg. De vanligaste övningarna är
+                        muscle up, pull ups, armhävningar och squats. Exempel på mer avancerade 
                         övningar är L-sit, frontlever och handstående. <br><br> 
                         
                         Att träna Calisthenics / Street Workout har flera fördelar. Idrotten är väldigt lättillgänglig och enkel att anpassa efter olika individer. 
                         Det enda som behövs är utövarens egen kropp, marken och ett räcke eller utomhusgym. 
                         Den vanligaste utrustningen 
-                        är en pullupstång och <a target="_blank" href="https://www.onlineplaygrounds.co.uk/parallel-bars-fc25.html">parallellbars (dipsstänger)</a>. 
-                        
+                        är en pullupstång och <a class="clickable" target="_blank" onclick="openModal('p-bars')" >parallellbars (dipsstänger)</a>. 
                         <br> <br>
-    <!-- Street Workout ger dig även atletiska resultat samtidigt som du styrketränar. Det är en relativt stor skillnad 
-    på denna typen av kroppsviktsträning om man jämför med gymträning. 
-    <br> -->
                         Se youtubevideon för mer information om 
                         Street Workout. 
                     </p>
@@ -308,7 +312,7 @@ Skriv till Jakob Fogelklou
             <h2>Open gym</h2>
                 <div class="open-gym-info">
                     <p>
-                        Under sommarhalvåret tränar vi på utegymmet vid plikta i slottskogen och under vinterhalvåret tränar vi i en idrottssal i Nordhemskolan. 
+                        Under sommarhalvåret tränar vi på utegymmet vid plikta i slottsskogen och under vinterhalvåret tränar vi i en idrottssal i Nordhemskolan. 
                     </p>
                     <ul>
                         <li>Onsdagar: 20:00-22:00 - Nordhemskolan (v41 - v50)</li>

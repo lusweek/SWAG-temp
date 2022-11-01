@@ -35,6 +35,13 @@ h1, h2{
     align-self: center;
 }
 
+.clickable{
+    cursor: context-menu;
+    color: blue;
+    text-decoration: underline;
+
+}
+
 /* GLOBAL END */
 
 /*Side-menu start*/
@@ -832,7 +839,10 @@ border-top: rgb(173, 173, 173) solid 70px;
     line-height: 30px;
     padding: 0px 15px;
     line-height: 50px;
+}
 
+.priser-table td{
+    min-width: 60px;
 }
 
 .mittle{
@@ -850,15 +860,49 @@ border-top: rgb(173, 173, 173) solid 70px;
    
 }
 
+#modal-wrapper{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.modal-content{
+    width: 90vh;
+    height: 90vh;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    position: relative;
+}
+.modal-content img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#close-modal-x{
+    position: absolute;
+    margin: 0%;
+    top: 5px;
+    right: 14px;
+    color: black;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 /*För dator*/
 @media screen and (min-width:900px){
-    /*
-    .about-section article:hover, 
-    .kurser-section article:hover{
-        transform: scale(1.07,1.07);
-        background-color: rgb(231, 231, 231);
+  
+    .modal-content{
+        width: 60vh;
+        height: 60vh;
     }
-    */
+
     .about-section article, 
     .kurser-section article{
         transition-duration: 0.5s;
