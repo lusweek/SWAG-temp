@@ -42,6 +42,10 @@ h1, h2{
     cursor: pointer;
 }
 
+.max-height{
+    max-height: 70vh;
+}
+
 /* GLOBAL END */
 
 /*Side-menu start*/
@@ -123,7 +127,7 @@ nav img{
 
 
 header{
-    background-image: url(../img/Backround-img-min.jpg);
+    background-image: url(../img/Backround-img-min.webp);
     background-size: cover;
     background-position-x: 18%;
     background-position-y: center;
@@ -516,7 +520,7 @@ position: relative;
 }
 
 .om-swag-img{
-    background-image: url(../img/jakob-frontlever-min.jpg);
+    background-image: url(../img/jakob-frontlever-min.webp);
     background-size: cover;
     background-position-y: 12%;
     width: 94vw;
@@ -590,7 +594,7 @@ position: relative;
 
 
 .mucle-up-img{
-width: 40%;
+height: 100%;
 float: left;
 margin: 30px;
 margin: 23px 25px 10px 10px;
@@ -653,6 +657,7 @@ border-radius: 5px;
 .open-gym iframe{
 width: 100%;
 height: 40vh;
+align-self: center;
 }
 
 .open-gym-p-i{
@@ -973,6 +978,8 @@ border-top: rgb(173, 173, 173) solid 70px;
  
     .open-gym iframe{
         height: 60vh;
+        width: 85%;
+        max-width: 1110px;
     }
 
     .om-swag-img{
