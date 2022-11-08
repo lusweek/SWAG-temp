@@ -46,7 +46,17 @@ h1, h2{
     max-height: 70vh;
 }
 
+
+
 /* GLOBAL END */
+
+/* FOCUS START */
+
+*:focus{
+    border: 2px solid black;
+}
+
+/* FOCUS END */
 
 /*Side-menu start*/
 nav{

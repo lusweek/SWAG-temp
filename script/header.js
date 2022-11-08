@@ -79,8 +79,27 @@ function openModal(text){
     break;
   }
 
+  document.querySelector('#close-modal-x').focus()
+
+
 }
 
 function closeModal(){
   document.querySelector('#modal-wrapper').style.display="none"
 } 
+
+let focusAfterClose = ''
+
+function setFocusIdAfterClose(id) {
+  focusAfterClose = id
+}
+
+function enterCloseModal(){
+document.querySelector('#modal-wrapper').style.display="none"
+document.getElementById(focusAfterClose).focus()
+}
+
+function enterOpenModal(text, id){
+  setFocusIdAfterClose(id)
+  openModal(text)
+}

@@ -16,7 +16,7 @@
 
 <div id="modal-wrapper">
     <div class="modal-content">
-        <h1 id="close-modal-x" onclick="closeModal()">x</h1>
+        <h1 id="close-modal-x" tabindex="0" onkeydown="if (event.keyCode == 13) {enterCloseModal()}" onclick="closeModal()">x</h1>
         <img id="modal-img" src="" alt="image on the selected text">
     </div>
 </div>
@@ -35,7 +35,7 @@
 
 
     </div>
-    <a id="btn-open" class="btn-open" href="#/" onclick="openSideMenu()">
+    <a id="btn-open" tabindex=0 class="btn-open" href="#/" onclick="openSideMenu()">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </a>
 </nav>
@@ -52,7 +52,7 @@
     <!--VÅRAT UTBUD start-->
 
     <section >
-        <a class="martins-container" href="#vårt-utbud"><svg id="martins" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 655.5 176.5"><defs><style>.cls-1{fill:#ff0;}</style></defs><polygon class="cls-1" points="655.5 88 327.5 156 327.5 176 655.5 108 655.5 88"/><polygon class="cls-1" points="328 156.5 0 88.5 0 108.5 328 176.5 328 156.5"/><polygon class="cls-1" points="655.5 44 327.5 112 327.5 132 655.5 64 655.5 44"/><polygon class="cls-1" points="328 112.5 0 44.5 0 64.5 328 132.5 328 112.5"/><polygon class="cls-1" points="655.5 0 327.5 68 327.5 88 655.5 20 655.5 0"/><polygon class="cls-1" points="328 68.5 0 0.5 0 20.5 328 88.5 328 68.5"/></svg>
+        <a class="martins-container" tabindex=-1 href="#vårt-utbud"><svg id="martins" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 655.5 176.5"><defs><style>.cls-1{fill:#ff0;}</style></defs><polygon class="cls-1" points="655.5 88 327.5 156 327.5 176 655.5 108 655.5 88"/><polygon class="cls-1" points="328 156.5 0 88.5 0 108.5 328 176.5 328 156.5"/><polygon class="cls-1" points="655.5 44 327.5 112 327.5 132 655.5 64 655.5 44"/><polygon class="cls-1" points="328 112.5 0 44.5 0 64.5 328 132.5 328 112.5"/><polygon class="cls-1" points="655.5 0 327.5 68 327.5 88 655.5 20 655.5 0"/><polygon class="cls-1" points="328 68.5 0 0.5 0 20.5 328 88.5 328 68.5"/></svg>
         </a>
         </section>
 </div>
@@ -129,7 +129,7 @@
                         Att träna Calisthenics / Street Workout har flera fördelar. Idrotten är väldigt lättillgänglig och enkel att anpassa efter olika individer. 
                         Det enda som behövs är utövarens egen kropp, marken och ett räcke eller utomhusgym. 
                         Den vanligaste utrustningen 
-                        är en pullupstång och <span class="clickable" target="_blank" onclick="openModal('p-bars')" >parallellbars (dipsstänger)</span>. 
+                        är en pullupstång och <span tabindex="0" id="p-bars" onkeydown="if (event.keyCode == 13) {enterOpenModal('p-bars', 'p-bars')}" class="clickable" target="_blank" onclick="openModal('p-bars')" >parallellbars (dipsstänger)</span>. 
                         <br> <br>
                         Se youtubevideon för mer information om 
                         Street Workout. 
