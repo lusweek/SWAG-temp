@@ -123,7 +123,7 @@ nav img{
 
 
 header{
-    background-image: url(../img/Backround-img.jpg);
+    background-image: url(../img/Backround-img-min.jpg);
     background-size: cover;
     background-position-x: 18%;
     background-position-y: center;
@@ -516,7 +516,7 @@ position: relative;
 }
 
 .om-swag-img{
-    background-image: url(../img/jakob-frontlever.jpg);
+    background-image: url(../img/jakob-frontlever-min.jpg);
     background-size: cover;
     background-position-y: 12%;
     width: 94vw;
