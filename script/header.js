@@ -75,7 +75,6 @@ function openModal(text){
 
   switch (text) {
     case 'p-bars':
-      console.log('yessssss');
       modalImg.src = "./img/P-bars.webp"
     break;
   }

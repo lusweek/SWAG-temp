@@ -39,7 +39,7 @@ h1, h2{
     cursor: context-menu;
     color: blue;
     text-decoration: underline;
-
+    cursor: pointer;
 }
 
 /* GLOBAL END */
