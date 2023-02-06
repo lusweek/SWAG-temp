@@ -1,0 +1,2 @@
+För att deploya till prod:
+Gör en push. Deploy sker automatiskt på cloudflare
