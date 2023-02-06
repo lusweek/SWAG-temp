@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Göteborgs första och enda streetworkout och calisthenicsförening. Vi brukar träna vid utegymmet i slottsskogen. Vi har kurser i muscle up och handstående.">
+    <meta name="description"
+        content="Göteborgs första och enda streetworkout och calisthenicsförening. Vi brukar träna vid utegymmet i slottsskogen. Vi har kurser i muscle up och handstående.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/app.css">
     <script src="https://use.fontawesome.com/bf0334d3c9.js"></script>
@@ -11,302 +13,348 @@
 
     <title>SWAG</title>
 </head>
+
 <body>
 
 
-<div id="modal-wrapper">
-    <div class="modal-content">
-        <h1 id="close-modal-x" tabindex="0" onkeydown="if (event.keyCode == 13) {enterCloseModal()}" onclick="closeModal()">x</h1>
-        <img id="modal-img" src="" alt="image on the selected text">
+    <div id="modal-wrapper">
+        <div class="modal-content">
+            <h1 id="close-modal-x" tabindex="0" onkeydown="if (event.keyCode == 13) {enterCloseModal()}"
+                onclick="closeModal()">x</h1>
+            <img id="modal-img" src="" alt="image on the selected text">
+        </div>
     </div>
-</div>
 
 
-<!--SIDE-BAR OCH LOGGA-->
-<nav>
-        <a onclick="closeSideMenuSWAG()" href="#/"><img class="logo-side" src="./img/swag_logo_vector_02.svg" alt="SWAG logo"></img></a>
+    <!--SIDE-BAR OCH LOGGA-->
+    <nav>
+        <a onclick="closeSideMenuSWAG()" href="#/"><img class="logo-side" src="./img/swag_logo_vector_02.svg"
+                alt="SWAG logo"></img></a>
 
-    <div id="navbar-side-id" class="navbar-side">
-        <a href="#/" class="btn-close" onclick="closeSideMenu()"> &times;</a>
+        <div id="navbar-side-id" class="navbar-side">
+            <a href="#/" class="btn-close" onclick="closeSideMenu()"> &times;</a>
             <img class="logo" src="./img/swag_logo_vector_02.svg" alt="SWAG logo"></img>
-            <a onclick="closeSideMenuKurser()" href="#kurser"><h2>Utbud</h2></a>
-            <a onclick="closeSideMenuOpenGym()"   href="#open-gym"><h2>Open gym</h2></a> 
-            <a onclick="closeSideMenuSWAG()"   href="#kontakt"><h2>Anmälan/ Kontakt/<br>medlemsansökan</h2></a>
+            <a onclick="closeSideMenuKurser()" href="#kurser">
+                <h2>Utbud</h2>
+            </a>
+            <a onclick="closeSideMenuOpenGym()" href="#open-gym">
+                <h2>Open gym</h2>
+            </a>
+            <a onclick="closeSideMenuSWAG()" href="#kontakt">
+                <h2>Anmälan/ Kontakt/<br>medlemsansökan</h2>
+            </a>
 
 
-    </div>
-    <a id="btn-open" tabindex=0 class="btn-open" href="#/" onclick="openSideMenu()">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </a>
-</nav>
+        </div>
+        <a id="btn-open" tabindex=0 class="btn-open" href="#/" onclick="openSideMenu()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+    </nav>
 
-<div class="header-utbud-wrapper">
+    <div class="header-utbud-wrapper">
         <header>
 
             <div class="title-slogan">
-                <h1 class="title">GÖTEBORGS</h1>
-                <h2 class="slogan">STREETWORKOUT & <br> CALISTHENICSFÖRENING</h2> <!--text header-->
+                <div>
+                    <h1 class="title">GÖTEBORGS</h1>
+                    <h2 class="slogan">STREETWORKOUT & <br> CALISTHENICSFÖRENING</h2> <!--text header-->
+                </div>
+
+                <img class="aktiv_ungdom_logga" src="./img/AktivUngdom_Logga.png" alt="Aktiv ungdoms logga">
             </div>
+
         </header>
-        
-    <!--VÅRAT UTBUD start-->
 
-    <section >
-        <a class="martins-container" tabindex=-1 href="#vårt-utbud"><svg id="martins" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 655.5 176.5"><defs><style>.cls-1{fill:#ff0;}</style></defs><polygon class="cls-1" points="655.5 88 327.5 156 327.5 176 655.5 108 655.5 88"/><polygon class="cls-1" points="328 156.5 0 88.5 0 108.5 328 176.5 328 156.5"/><polygon class="cls-1" points="655.5 44 327.5 112 327.5 132 655.5 64 655.5 44"/><polygon class="cls-1" points="328 112.5 0 44.5 0 64.5 328 132.5 328 112.5"/><polygon class="cls-1" points="655.5 0 327.5 68 327.5 88 655.5 20 655.5 0"/><polygon class="cls-1" points="328 68.5 0 0.5 0 20.5 328 88.5 328 68.5"/></svg>
-        </a>
+        <!--VÅRAT UTBUD start-->
+
+        <section>
+            <a class="martins-container" tabindex=-1 href="#vårt-utbud"><svg id="martins" data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 655.5 176.5">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #ff0;
+                            }
+                        </style>
+                    </defs>
+                    <polygon class="cls-1" points="655.5 88 327.5 156 327.5 176 655.5 108 655.5 88" />
+                    <polygon class="cls-1" points="328 156.5 0 88.5 0 108.5 328 176.5 328 156.5" />
+                    <polygon class="cls-1" points="655.5 44 327.5 112 327.5 132 655.5 64 655.5 44" />
+                    <polygon class="cls-1" points="328 112.5 0 44.5 0 64.5 328 132.5 328 112.5" />
+                    <polygon class="cls-1" points="655.5 0 327.5 68 327.5 88 655.5 20 655.5 0" />
+                    <polygon class="cls-1" points="328 68.5 0 0.5 0 20.5 328 88.5 328 68.5" />
+                </svg>
+            </a>
         </section>
-</div>
+    </div>
 
-    <section id="vårt-utbud" class="vårt-utbud"> 
+    <section id="vårt-utbud" class="vårt-utbud">
         <p class="qvote">Trött på gravitationens lagar? <br> Träna calisthenics med oss!</p>
         <div class="utbud-links">
             <!-- <div onclick="openEvenumang()" id="a-evenumang"><a  href="#evenumang">Evenemang</a></div> -->
-            <div id="a-kurser"><a   href="#kurser">Kurser</a></div>
-            <div id="a-open-gym"><a id="a-open.gym"   href="#open-gym">Open gym</a></div>
-            <div id="a-kurser"><a   href="#kontakt">Kontakt</a></div>
+            <div id="a-kurser"><a href="#kurser">Kurser</a></div>
+            <div id="a-open-gym"><a id="a-open.gym" href="#open-gym">Open gym</a></div>
+            <div id="a-kurser"><a href="#kontakt">Kontakt</a></div>
         </div>
     </section>
-<!--VÅRAT UTBUD end-->
+    <!--VÅRAT UTBUD end-->
 
-<!--OM SWAG TITLE start-->
+    <!--OM SWAG TITLE start-->
 
-<section id="super-logo" class="about-section2">
-    <div class="om-oss" id="om-oss">
-        <h1>SWAG</h1>
-        <p id="swag-slogan">Street Workout Athletes Gothenburg</p>
-    </div>
+    <section id="super-logo" class="about-section2">
+        <div class="om-oss" id="om-oss">
+            <h1>SWAG</h1>
+            <p id="swag-slogan">Street Workout Athletes Gothenburg</p>
+        </div>
         <div class="logo-picture"><img src="./img/swag_logo_vector_02.svg" alt="SWAG logga"></div>
         <div class="black-background"></div>
         <div class="picture-background"></div>
-</section>
+    </section>
 
-<!--OM SWAG TITLE end-->
+    <!--OM SWAG TITLE end-->
 
 
-<section id="about" class="about-section"> 
+    <section id="about" class="about-section">
 
-    <!--INFO OM SWAG-->
+        <!--INFO OM SWAG-->
 
- 
-            <div class="box-container-background2">
-                    <div class="box-container2">
-                        <h2 id="box-title-vad-är-sw" class="box-title">Vilka är SWAG?</h2>
-                        <div class="mucle-up-p-i">
-                        </div>
-                    </div>
-            </div>    
 
-            <div class="info-container-gruppbild">
-                    <img id="gruppbild" class="max-height" src="./img/GRUPPBIIILD-min.webp" alt="En gruppbild på goa gänget">
-                        <p>Swag är ett glatt och härligt gäng där alla är välkomna att vara med - oavsett ålder, träningsnivå, 
-                            kön eller etnicitet. Vi tränar, motiverar och inspirerar varandra att träna, leka och framför allt ha kul ihop!
-                             Vi rör oss och utvecklar våra kroppar tillsammans, glädjs och hjälper varandra framåt i träningen. 
-                             Du får mer än träning, du får en hel grupp av glada vänner! 
-                        </p>
-                    
+        <div class="box-container-background2">
+            <div class="box-container2">
+                <h2 id="box-title-vad-är-sw" class="box-title">Vilka är SWAG?</h2>
+                <div class="mucle-up-p-i">
+                </div>
             </div>
+        </div>
+
+        <div class="info-container-gruppbild">
+            <img id="gruppbild" class="max-height" src="./img/GRUPPBIIILD-min.webp" alt="En gruppbild på goa gänget">
+            <p>Swag är ett glatt och härligt gäng där alla är välkomna att vara med - oavsett ålder, träningsnivå,
+                kön eller etnicitet. Vi tränar, motiverar och inspirerar varandra att träna, leka och framför allt ha
+                kul ihop!
+                Vi rör oss och utvecklar våra kroppar tillsammans, glädjs och hjälper varandra framåt i träningen.
+                Du får mer än träning, du får en hel grupp av glada vänner!
+            </p>
+
+        </div>
 
         <!--INFO OM SWAG END-->
 
-<!--OM STREET WORKOUT-->
-    <article>
-        <div class="box-container-background" >
+        <!--OM STREET WORKOUT-->
+        <article>
+            <div class="box-container-background">
                 <div class="box-container">
                     <h2 id="box-title-vad-är-sw" class="box-title">Vad är Street Workout?</h2>
                     <div class="mucle-up-p-i">
                     </div>
                 </div>
-        </div>    
+            </div>
 
-        <div class="info-container">
+            <div class="info-container">
                 <div class="om-swag-img"></div>
-                    <p>Street Workout, calisthenics eller kroppsviktsträning. Tre
-                        namn med ungefär samma innebörd. Street Workout handlar framför allt om att
-                        använda kroppen som ditt träningsverktyg. De vanligaste övningarna är
-                        muscle up, pull ups, armhävningar och squats. Exempel på mer avancerade 
-                        övningar är L-sit, frontlever och handstående. <br><br> 
-                        
-                        Att träna Calisthenics / Street Workout har flera fördelar. Idrotten är väldigt lättillgänglig och enkel att anpassa efter olika individer. 
-                        Det enda som behövs är utövarens egen kropp, marken och ett räcke eller utomhusgym. 
-                        Den vanligaste utrustningen 
-                        är en pullupstång och <span tabindex="0" id="p-bars" onkeydown="if (event.keyCode == 13) {enterOpenModal('p-bars', 'p-bars')}" class="clickable" target="_blank" onclick="openModal('p-bars')" >parallellbars (dipsstänger)</span>. 
-                        <br> <br>
-                        Se youtubevideon för mer information om 
-                        Street Workout. 
-                    </p>
+                <p>Street Workout, calisthenics eller kroppsviktsträning. Tre
+                    namn med ungefär samma innebörd. Street Workout handlar framför allt om att
+                    använda kroppen som ditt träningsverktyg. De vanligaste övningarna är
+                    muscle up, pull ups, armhävningar och squats. Exempel på mer avancerade
+                    övningar är L-sit, frontlever och handstående. <br><br>
+
+                    Att träna Calisthenics / Street Workout har flera fördelar. Idrotten är väldigt lättillgänglig och
+                    enkel att anpassa efter olika individer.
+                    Det enda som behövs är utövarens egen kropp, marken och ett räcke eller utomhusgym.
+                    Den vanligaste utrustningen
+                    är en pullupstång och <span tabindex="0" id="p-bars"
+                        onkeydown="if (event.keyCode == 13) {enterOpenModal('p-bars', 'p-bars')}" class="clickable"
+                        target="_blank" onclick="openModal('p-bars')">parallellbars (dipsstänger)</span>.
+                    <br> <br>
+                    Se youtubevideon för mer information om
+                    Street Workout.
+                </p>
 
                 <div class="mucle-up-link">
                     <a target="_blank" href="https://www.youtube.com/watch?v=7f8ybrwqxww">Se Youtubevideo</a>
                 </div>
-        </div>
-    </article>
-<!--OM STREET WORKOUT end-->
+            </div>
+        </article>
+        <!--OM STREET WORKOUT end-->
 
-</section>
+    </section>
 
-<!--KURSER-->
-    <section id="kurser" class="kurser-section"> <!--Ha en video för varje box som man kan klicka på som visar hur movet ser ut-->
+    <!--KURSER-->
+    <section id="kurser" class="kurser-section">
+        <!--Ha en video för varje box som man kan klicka på som visar hur movet ser ut-->
         <article>
             <div class="info-container-kurser">
                 <h1>Vårt utbud</h1>
-                <p>För tillfället kan du anmäla dig till vår muscle up kurs eller, om du vill ta din träning till nästa nivå, 
+                <p>För tillfället kan du anmäla dig till vår muscle up kurs eller, om du vill ta din träning till nästa
+                    nivå,
                     bemästra dina mål med Jakob som din personliga tränare. </p>
             </div>
-            
-                <div class="box-container-background2-mucle-up">  
-                    <div class="box-container2">
-                            <h2 id="box-title-kursen" class="box-title">Calisthenics - Muscle-up & handstand</h2>
-                        <div class="mucle-up-p-i">
-                           <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> -->
-                        </div>
+
+            <div class="box-container-background2-mucle-up">
+                <div class="box-container2">
+                    <h2 id="box-title-kursen" class="box-title">Calisthenics - Muscle-up & handstand</h2>
+                    <div class="mucle-up-p-i">
+                        <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> -->
                     </div>
                 </div>
-                <div class="info-container-mucle-up">
-                   <img class="mucle-up-img max-height" src="./img/DSC05101_Original.webp" alt="Jakob hjälper någon med muscle up">
+            </div>
+            <div class="info-container-mucle-up">
+                <img class="mucle-up-img max-height" src="./img/DSC05101_Original.webp"
+                    alt="Jakob hjälper någon med muscle up">
 
-                        <p>
-                           
-I kursen kommer vi framför allt att fokusera på<br>
-•	teknik- och styrkeövningar för handstående <br>
-•	teknik- och styrkeövningar för muscle-up<br>
-Under kursen får du lära dig att utföra övningarna säkert och med rätt teknik. Du kommer även att få handfasta tips för att din utveckling ska gå framåt utifrån dina förutsättningar.
-<br><br>
-Under kursen kommer vi även att gå igenom <br>
-•	grundläggande freestyle- och svingteknik<br>
-•	övningar för att kunna bygga upp styrkan i statiska moment som L-sit, backlever, frontlever, <br>
-•	övningar för att kunna bygga upp styrkan i styrkedynamiska moment som one-arm pull-up, handstand push-up osv)<br>
-Kursens övriga innehåll kommer att anpassas lite efter kursdeltagarna.
-<br><br>
-Som kursdeltagare får du också:<br>
-•	tips på hur du kan lägga upp träningen under de dagar du inte kan träna med SWAG<br>
-•	delta på alla open gym pass utan extra kostnad <br>
-•	förtur vid restriktioner och liknande<br>
-Skriv till Jakob Fogelklou
- <br><br>
-                           
-                            <span id="muscle-up-pris">
-                            Dag och tid: Onsdagar 18:10-19:30 <br>
-                            (OBS ingen träning höstlov, 2 november) <br>
-                            Plats: Nordhemsskolan <br>
-                            Adress: Nordhemsgatan 51, 413 09 Göteborg  <br>
-                            Antal tillfällen: 12  <br>
-                            Kursperiod: 14 Sep 2022 - 15 December 2022 <br>
-                            ingår: Alla open-gym tillfällen 
-                            </span>
-                            <br><br>
-                            <a class="j-s-c" href="#priser">Se priser</a>
-                        </p>
-                    <div class="mucle-up-link">
-                        <a href="#kontakt">Anmälan</a>
-                    </div>
+                <p>
+
+                    I kursen kommer vi framför allt att fokusera på<br>
+                    • teknik- och styrkeövningar för handstående <br>
+                    • teknik- och styrkeövningar för muscle-up<br>
+                    Under kursen får du lära dig att utföra övningarna säkert och med rätt teknik. Du kommer även att få
+                    handfasta tips för att din utveckling ska gå framåt utifrån dina förutsättningar.
+                    <br><br>
+                    Under kursen kommer vi även att gå igenom <br>
+                    • grundläggande freestyle- och svingteknik<br>
+                    • övningar för att kunna bygga upp styrkan i statiska moment som L-sit, backlever, frontlever, <br>
+                    • övningar för att kunna bygga upp styrkan i styrkedynamiska moment som one-arm pull-up, handstand
+                    push-up osv)<br>
+                    Kursens övriga innehåll kommer att anpassas lite efter kursdeltagarna.
+                    <br><br>
+                    Som kursdeltagare får du också:<br>
+                    • tips på hur du kan lägga upp träningen under de dagar du inte kan träna med SWAG<br>
+                    • delta på alla open gym pass utan extra kostnad <br>
+                    • förtur vid restriktioner och liknande<br>
+                    Skriv till Jakob Fogelklou
+                    <br><br>
+
+                    <span id="muscle-up-pris">
+                        Dag och tid: Onsdagar 18:10-19:30 <br>
+                        (OBS ingen träning höstlov, 2 november) <br>
+                        Plats: Nordhemsskolan <br>
+                        Adress: Nordhemsgatan 51, 413 09 Göteborg <br>
+                        Antal tillfällen: 12 <br>
+                        Kursperiod: 14 Sep 2022 - 15 December 2022 <br>
+                        ingår: Alla open-gym tillfällen
+                    </span>
+                    <br><br>
+                    <a class="j-s-c" href="#priser">Se priser</a>
+                </p>
+                <div class="mucle-up-link">
+                    <a href="#kontakt">Anmälan</a>
+                </div>
             </div>
         </article>
 
 
-<!--PT start-->
+        <!--PT start-->
         <article>
-                <div class="box-container-background2-pt">  
-                    <div class="box-container2">
-                            <h2 id="box-title-jakob" class="box-title">Personlig träning med Jakob</h2>
-                        <div class="mucle-up-p-i">                         <!--   <i class="fa fa-arrow-right" aria-hidden="true"></i> -->
-                        </div>
+            <div class="box-container-background2-pt">
+                <div class="box-container2">
+                    <h2 id="box-title-jakob" class="box-title">Personlig träning med Jakob</h2>
+                    <div class="mucle-up-p-i"> <!--   <i class="fa fa-arrow-right" aria-hidden="true"></i> -->
                     </div>
                 </div>
-                <div class="info-container-pt">
-                    <div class="mucle-up-info-img"><img src="./img/_DSC2100-min.webp" alt="picture of someone doing mucle up"></div>
-                        <p>
-                            Nybörjare eller ej, vill du ta din träning till nästa nivå? Jakob är expert på
-                            calisthenics och street workout. Jakob kommer, på ett personligt plan, hjälpa dig att uppnå dina mål vare sig du vill tappa vikt, bygga volym 
-                           eller lära dig avancerade trick och övningar. 
-                           <br><br>
-                           Du får även värdefull kunskap om kost för att må bra och optimera muskelbyggnad. 
-                           <br><br>
-                           Låter det intressant? 
-                           <br>
-                           Vill du veta mer? 
-                           <br>
-                           <a href="#kontakt">kontakta oss</a>.
-                            </p>
-                        <div class="mucle-up-link">
-                            <a href="#kontakt">Anmälan</a>
-                        </div>
+            </div>
+            <div class="info-container-pt">
+                <div class="mucle-up-info-img"><img src="./img/_DSC2100-min.webp"
+                        alt="picture of someone doing mucle up"></div>
+                <p>
+                    Nybörjare eller ej, vill du ta din träning till nästa nivå? Jakob är expert på
+                    calisthenics och street workout. Jakob kommer, på ett personligt plan, hjälpa dig att uppnå dina mål
+                    vare sig du vill tappa vikt, bygga volym
+                    eller lära dig avancerade trick och övningar.
+                    <br><br>
+                    Du får även värdefull kunskap om kost för att må bra och optimera muskelbyggnad.
+                    <br><br>
+                    Låter det intressant?
+                    <br>
+                    Vill du veta mer?
+                    <br>
+                    <a href="#kontakt">kontakta oss</a>.
+                </p>
+                <div class="mucle-up-link">
+                    <a href="#kontakt">Anmälan</a>
                 </div>
-                   
+            </div>
+
             </div>
         </article>
 
 
-<!--PRISER START-->
+        <!--PRISER START-->
 
 
-<article id="priser">
-    <div class="box-container-background2-pt">  
-        <div class="box-container2">
-                <h2 id="box-title-jakob" class="box-title">Priser</h2>
-            <div class="mucle-up-p-i">                         
+        <article id="priser">
+            <div class="box-container-background2-pt">
+                <div class="box-container2">
+                    <h2 id="box-title-jakob" class="box-title">Priser</h2>
+                    <div class="mucle-up-p-i">
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="info-container-pt">
-        <table class="priser-table">
-            <tr>
-                <th>Typ av avgift</th>
-                <th>Pris</th>
-            </tr>
-            <tr>
-                <td>Medlensavgift, årlig, (krävs för att gå kurs)</td>
-                <td>100 kr</td>
-            </tr>
-            <tr>
-                <td>Kurs (Muscle-up & Handstand)</td>
-                <td>1100 kr</td>
-            </tr>
-            <tr>
-                <td>Kurs student/ungdom 15-25 år (Muscle-up & Handstand)</td>
-                <td>850 kr</td>
-            </tr> <tr>
-                <td>Kurs, 1 tillfälle</td>
-                <td>120 kr</td>
-            </tr> <tr>
-                <td>Kurs student/ungdom 15-25 år, 1 tillfälle </td>
-                <td>90 kr</td>
-            </tr> <tr>
-                <td>Open gym termin (20 tillfällen)</td>
-                <td>700 kr</td>
-            </tr> <tr>
-                <td>Open gym, 1 tillfälle</td>
-                <td>60 kr</td>
-            </tr> <tr>
-                <td>Open gym, 1 tillfälle (Ej medlem)</td>
-                <td>80 kr</td>
-            </tr> 
+            <div class="info-container-pt">
+                <table class="priser-table">
+                    <tr>
+                        <th>Typ av avgift</th>
+                        <th>Pris</th>
+                    </tr>
+                    <tr>
+                        <td>Medlensavgift, årlig, (krävs för att gå kurs)</td>
+                        <td>100 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Kurs (Muscle-up & Handstand)</td>
+                        <td>1100 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Kurs student/ungdom 15-25 år (Muscle-up & Handstand)</td>
+                        <td>850 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Kurs, 1 tillfälle</td>
+                        <td>120 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Kurs student/ungdom 15-25 år, 1 tillfälle </td>
+                        <td>90 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Open gym termin (20 tillfällen)</td>
+                        <td>700 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Open gym, 1 tillfälle</td>
+                        <td>60 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Open gym, 1 tillfälle (Ej medlem)</td>
+                        <td>80 kr</td>
+                    </tr>
 
-        </table>
+                </table>
 
-        <div class="mucle-up-link">
-            <a href="#kontakt">Anmälan</a>
-        </div>
-    </div>
-        
-    </div>
+                <div class="mucle-up-link">
+                    <a href="#kontakt">Anmälan</a>
+                </div>
+            </div>
 
-</article>
+            </div>
+
+        </article>
 
 
-<!--PRISER END-->
+        <!--PRISER END-->
 
 
     </section>
-<!--KURSER end-->
+    <!--KURSER end-->
 
-<!--Open gym start-->
-<section id="open-gym">
-    <div class="open-gym-background">
-        <div class="open-gym">
-            <h2>Open gym</h2>
+    <!--Open gym start-->
+    <section id="open-gym">
+        <div class="open-gym-background">
+            <div class="open-gym">
+                <h2>Open gym</h2>
                 <div class="open-gym-info">
                     <p>
-                        Under sommarhalvåret tränar vi på utegymmet vid plikta i slottsskogen och under vinterhalvåret tränar vi i en idrottssal i Nordhemskolan. 
+                        Under sommarhalvåret tränar vi på utegymmet vid plikta i slottsskogen och under vinterhalvåret
+                        tränar vi i en idrottssal i Nordhemskolan.
                     </p>
                     <ul>
                         <li>Onsdagar: 20:00-22:00 - Nordhemskolan (v41 - v50)</li>
@@ -314,21 +362,23 @@ Skriv till Jakob Fogelklou
                         <li>Söndagar: 13:30-15:30 - Utegymmet Tufteparken slottsskogen (April - November)</li>
                         <a class="j-s-c" href="#priser">Se priser</a>
                     </ul>
-                   
-                </div>
-                <iframe src="https://www.google.com/maps/d/embed?mid=1bY9b3X9N090RybxJ2NztxyYOHDSAUIk&ehbc=2E312F" width="640" height="480"></iframe>   
-            <div class="open-gym-p-i">
-                <p>Håll dig uppdaterad, bli inspiriead!<br>här på Instagram:</p>
-                <a target="_blank" href="https://www.instagram.com/swag.gbg/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-            <a id="bli-medläm-knapp" href="#kontakt">Bli medlem</a>
-        </div>
-    </div>
-</section>
-<!--Open gym end-->
 
-<!--Evenumang START-->
-<!--
+                </div>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1bY9b3X9N090RybxJ2NztxyYOHDSAUIk&ehbc=2E312F"
+                    width="640" height="480"></iframe>
+                <div class="open-gym-p-i">
+                    <p>Håll dig uppdaterad, bli inspiriead!<br>här på Instagram:</p>
+                    <a target="_blank" href="https://www.instagram.com/swag.gbg/"><i class="fa fa-instagram"
+                            aria-hidden="true"></i></a>
+                </div>
+                <a id="bli-medläm-knapp" href="#kontakt">Bli medlem</a>
+            </div>
+        </div>
+    </section>
+    <!--Open gym end-->
+
+    <!--Evenumang START-->
+    <!--
 
 <section class="eve-section">
     <div class="eve-title">
@@ -347,29 +397,32 @@ Skriv till Jakob Fogelklou
     </div>
 </section>
 -->
-<!--Evenumang END-->
+    <!--Evenumang END-->
 
 
-<!--KONTAKT start-->
+    <!--KONTAKT start-->
     <section id="kontakt" class="kontakt-section">
         <div class="kontakt">
-            <h1>Anmälan / Kontakt /  medlemsansökan</h1>
+            <h1>Anmälan / Kontakt / medlemsansökan</h1>
             <p>
                 Anmälan, medlemsansökan och kontakt med oss sker via mail eller chatten på instagram. <br> <br>
-                Är du intresserad av att gå en kurs, ta PT-lektioner eller vara med på open gym 
-                är det bara att skicka iväg ett 
-                medelande till oss så svarar vi omgående. <br> <br> 
-                Tveka inte att höra av dig om du har några frågor! 
+                Är du intresserad av att gå en kurs, ta PT-lektioner eller vara med på open gym
+                är det bara att skicka iväg ett
+                medelande till oss så svarar vi omgående. <br> <br>
+                Tveka inte att höra av dig om du har några frågor!
             </p>
-        <footer>
-            <a target="_blank" href="mailto:swag.goteborg@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a> <!--Mail-->
-            <a target="_blank" href="https://www.instagram.com/swag.gbg/"><i class="fa fa-instagram" aria-hidden="true"></i></a> <!--Instagram-->
-        </footer>
+            <footer>
+                <a target="_blank" href="mailto:swag.goteborg@gmail.com"><i class="fa fa-envelope"
+                        aria-hidden="true"></i></a> <!--Mail-->
+                <a target="_blank" href="https://www.instagram.com/swag.gbg/"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a> <!--Instagram-->
+            </footer>
 
         </div>
     </section>
 
-<!--KONTAKT end-->
-<script src="./script/header.js"></script>
-   </body>
+    <!--KONTAKT end-->
+    <script src="./script/header.js"></script>
+</body>
+
 </html>
